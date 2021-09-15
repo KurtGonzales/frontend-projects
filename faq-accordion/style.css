@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(273, 75%, 66%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+p {
+    color: hsl(237, 12%, 33%);
+}
+
+.card {
+    background-color: #fff;
+    height: 80vh;
+    max-width: 100%;
+    width: 65%;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 6px 26px 35px 2px rgba(0,0,0,0.75);
+}
+
+.img-container {
+    margin-top: -110px;
+}
+
+.text-container {
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.questions {
+    margin-top: 0.4rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.seperator {
+    padding: .2em;
+    width: 90%;
+    margin-left: 0.7rem;
+    border-bottom: 1px solid #CCC;
+    display: visible;
+}
+
+.btn-show {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.question-1, 
+.question-2, 
+.question-3,
+.question-4,
+.question-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* Hide answers */
+.hidden-answer {
+    display: none;
+    font-size: 0.8rem;
+    text-align: left;
+    margin: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.show-answer .hidden-answer {
+    display: block;
+}
+
+.btn-down {
+    display: none;
+}
+
+.show-answer .btn-down {
+    display: inline;
+}
+
+.show-answer .btn-up {
+    display: none;
+}
+.show-answer .btn-down:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.show-answer .question-1,
+.show-answer .question-2,
+.show-answer .question-3,
+.show-answer .question-4,
+.show-answer .question-5 {
+    font-weight: bolder;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 1000px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        width: 60%;
+        margin: 60px 60px 60px 250px;
+    }
+
+    .img-container {
+        margin-top: 100px;
+        margin-left: -80px;
+    }
+
+    .img-container img {
+        height: 50vh;
+    }
+
+    .text-container {
+        margin-top: 100px;
+    }
+
+    .text-container h2 {
+        margin-right: 275px;
+    }
+
+    .questions {
+       margin-left: 30px;
+       margin-right: 50px;
+    }
+
+    .btn-show {
+        margin-left: 40px;
+    }
+
+}
