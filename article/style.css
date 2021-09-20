@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.card {
+   margin: 50px;
+   background-color: whitesmoke;
+   border-top-right-radius: 15px;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+}
+
+.image-container img {
+    height: 40vh;
+    max-width: 100%;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.customer {
+    margin-top: 40px;
+}
+
+.customer h3 {
+    margin: 15px;
+    color: hsl(217, 19%, 35%);
+    font-size: 1.3rem;
+}
+
+.customer p {
+    margin: 15px;
+    color: hsl(214, 17%, 51%);
+    font-size: 1.2rem;
+}
+
+.avatar {
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+}
+
+.show-div .avatar {
+    margin-top: -50px;
+    visibility: hidden;
+}
+
+.avatar img {
+    height: 10vh;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+.avatar .share-btn {
+    height: 5vh;
+    margin-left: 6rem;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.show {
+    background: transparent;
+    border: none;
+}
+
+.avatar h3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: hsl(217, 19%, 35%);
+}
+
+span {
+    font-size: 0.8rem;
+    color: hsl(214, 17%, 51%);
+}
+
+.social-media {
+    display: none;
+}
+
+.show-div .social-media {
+    display: flex; 
+    height: 10vh;
+    background-color: hsl(217, 19%, 35%);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.social-media h3 {
+    margin: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: hsl(214, 17%, 51%);
+}
+
+.social-media .icons {
+    height: 5vh;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+.social-media .share-btn-2 { 
+    height: 5vh;
+    margin-left: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 1000px) {
+    .card {
+        margin: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image-container{
+       width: 100vw;
+    }
+    .image-container img {
+        height: 57vh;
+        border-top-right-radius: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .customer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customer h3 {
+        font-size: 1.5rem;
+    }
+
+    .customer p {
+        margin-top: -1px;
+        font-size: 1.1rem;
+    }
+
+    .avatar {
+        margin-top: 10px;
+    }
+
+    .show-div .avatar {
+        visibility: visible;
+        margin-top: 20px;
+    }
+
+    .avatar h3 {
+        font-size: 1rem;
+    }
+
+    .share-btn {
+        padding-left: 100px;
+    }
+
+    .show-div .social-media {
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        border-radius: 20px;
+    }
+
+    .show-div .share-btn-2 {
+        display: none;
+    }
+
+    .show-div .social-media img {
+        height: 5vh;
+        margin: 15px;
+    }
+}
