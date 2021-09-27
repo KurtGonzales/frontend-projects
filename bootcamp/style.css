@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.slide-container {
+  display: flex;
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.main {
+  display: block;
+}
+
+.img-container {
+  margin-top: -10px;
+}
+
+.img-container img {
+  height: 70vh;
+  margin-top: 110px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.btns button {
+  margin-left: 90px;
+  background-color: lightgray;
+  width: 80px;
+  height: 8vh;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btns .prev {
+  position: absolute;
+  top: 85%;
+  left: 20%;
+}
+
+.btns .next {
+  position: absolute;
+  top: 85%;
+  right: 35%;
+}
+
+.text-container {
+  background-image: url("./images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: 150px;
+  margin-left: 30px;
+}
+
+.text-container h2 {
+  text-align: center;
+  color: hsl(240, 38%, 20%);
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+.text-container h3 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin-top: 20px;
+  text-transform: capitalize;
+  color: hsl(240, 38%, 20%);
+}
+
+.text-container span {
+  color: hsl(240, 18%, 77%);
+  font-weight: normal;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1000px) {
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .img-container {
+    margin-right: 150px;
+  }
+
+  .text-container {
+    background-image: url("./images/pattern-quotes.svg");
+    background-position: inherit;
+    margin-top: 200px;
+    margin-right: -110px;
+  }
+
+  .text-container h2 {
+    text-align: left;
+    font-size: 1.9rem;
+    margin-left: 50px;
+    line-height: 2.5rem;
+  }
+
+  .text-container h3 {
+    display: flex;
+    margin-left: 70px;
+  }
+
+  .text-container span {
+    margin-left: 10px;
+  }
+
+  .btns button {
+    margin-top: -20px;
+    margin-left: 40px;
+  }
+
+  .btns .prev {
+    left: 52%;
+  }
+
+  .attribution {
+    position: absolute;
+    left: 40%;
+    top: 95%;
+  }
+}
