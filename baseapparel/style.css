@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+    margin: 20px;
+}
+
+.hero-image img {   
+    width: 100%;
+}
+
+.banner {
+    text-align: center;
+    margin: 40px;
+    margin-top: 50px;
+}
+
+.banner h1 {
+    color:  hsl(0, 36%, 70%);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.banner h1 span {
+    text-transform: uppercase;
+    color: hsl(0, 6%, 24%);
+}
+
+.banner p {
+    color:  #ce9797;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.form {
+    margin-top: -20px;
+    text-align: center;
+}
+
+.form input {
+    width: 60%;
+    padding: 15px;
+    border-radius: 20px;
+    border-color: #ce9797;
+    outline: 0;
+}
+
+.form.success input {
+    border-color: #2ecc71;
+}
+
+.form .icon {
+    position: absolute;
+    left: 63%;
+    margin-top: 13px;
+    visibility: hidden;
+}
+
+.form.error .icon {
+    visibility: visible;
+}
+
+.form button {
+    position: absolute;
+    background-color: hsl(0, 36%, 70%);
+    border-radius: 25px;
+    width: 70px;
+    height: 47px;
+    left: 70%;
+    border: none;
+    cursor: pointer;
+}
+
+small {
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    left: 25%;
+    color: hsl(0, 93%, 68%);
+    visibility: hidden;
+}
+
+.form.error small {
+    visibility: visible;
+}
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 1000px){
+    .main-container {
+        background-image: url('./images/bg-pattern-desktop.svg');
+    }
+
+    .hero-image img {
+       position: absolute;
+       left: 50%;
+       bottom: 0%;
+       height: 100vh;
+       width: 50%;
+    }
+
+    .logo {
+        padding: 20px;
+        margin-left: 50px;
+    }
+
+    .banner {
+        position: absolute;
+        right: 60%;
+    }
+
+    .banner h1, .banner p {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .form {
+        position: absolute;
+        top: 80%;
+        right: 55%;
+        width: 50%;
+    }
+
+    .attribution {
+        position: absolute;
+        top: 95%;
+        margin-left: 80px;
+    }
+
+}
