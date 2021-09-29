@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('./images/bg-intro-mobile.png');
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+section {
+    margin: 50px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.title h1 {
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+}
+
+.title p {
+    line-height: 1.8rem;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.banner {
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner h3 {
+    color: white;
+}
+
+.banner span, h4 {
+    color: hsl(246, 25%, 77%);
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.forms img {
+    height: 4vh;
+    position: absolute;
+    left: 80%;
+    margin-top: 15px;
+    visibility: hidden;
+}
+
+.forms.error img {
+    visibility: visible;
+}
+
+small {
+    display: block;
+    visibility: hidden;
+    color: hsl(0, 100%, 74%);
+}
+
+.forms.error small {
+    visibility: visible;
+}
+
+.forms {
+    margin: 15px;
+}
+
+.forms.error input {
+    border-color:  #cc1e0b;
+}
+
+.forms.success input {
+    border-color: #2ecc71;
+}
+
+input {
+    width: 100%;
+    height: 10vh;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+::placeholder {
+    padding: 15px;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    width: 92%;
+    margin-left: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0 green;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: hsl(154, 78%, 34%);
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+    color: hsl(246, 25%, 77%);
+}
+
+.form-container p span {
+    color: hsl(0, 100%, 74%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 1000px){
+    section {
+        display: flex;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .title {
+        margin-top: 200px;
+    }
+
+    .title h1 {
+        text-align: center;
+        margin-right: 200px;
+        font-size: 2.8rem;
+    }
+
+    .title p {
+        text-align: left;
+    }
+
+    .forms img {
+        margin-left: 150px;
+    }
+}
