@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.main-container {
+    text-align: center;
+    margin: 50px;
+}
+
+.header img {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 20px;
+}
+
+.header h1 span {
+    font-weight: bold;
+    color: black;
+}
+
+.form input {
+    width: 80%;
+    margin-top: 30px;
+    padding: 8px;
+    border-radius: 20px;
+    border-color:  hsl(223, 100%, 88%);
+    outline: none;
+}
+
+::placeholder {
+    padding: 15px;
+}
+
+.form small {
+    display: block;
+    color: hsl(354, 100%, 66%);
+    visibility: hidden;
+}
+
+.form.error input {
+    border-color: hsl(354, 100%, 66%);
+}
+
+.form.error small {
+    visibility: visible;
+}
+
+.form.success input {
+    border-color: #2ecc71;;
+}
+
+.form button {
+    display: inline-block;
+    margin-top: 10px;
+    width: 80%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    cursor: pointer;
+}
+
+.form button:hover {
+    opacity: 0.8;
+}
+
+.img-container {
+    margin-top: 90px;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.social-icons img {
+    height: 10vh;
+    padding: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: hsl(0, 0%, 59%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 1000px){
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+
+   .form input {
+       width: 30%;
+       border-radius: 50px;
+   }
+
+   .form small {
+       position: absolute;
+       top: 41%;
+       left: 30%;
+   }
+
+   .form button {
+       width: 15%;
+       border-radius: 50px;
+       height: 8vh;
+       margin-top: 30px;
+       margin-left: 10px;
+   }
+
+   .img-container img {
+       width: 50%;
+   }
+}
