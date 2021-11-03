@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Overpass:wght@300;600&family=Ubuntu:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&family=Overpass:wght@300;600&family=Ubuntu:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'DM Serif Display', serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Ubuntu', sans-serif;*/
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger-toggle {
+  visibility: hidden;
+}
+
+.close-toggle {
+  visibility: hidden;
+}
+
+.nav-links {
+  display: flex;
+  margin: 30px;
+}
+
+.nav-links ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  padding: 12px;
+  text-transform: uppercase;
+  color: hsl(273, 4%, 51%);
+  font-weight: bold;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+}
+
+.nav-links ul li:hover {
+  transform: scale(1.1);
+  color: hsl(270, 9%, 17%);
+}
+
+nav .logo img {
+  margin: 40px;
+  margin-left: 70px;
+}
+
+.button {
+  margin-left: -80px;
+  margin-right: 120px;
+}
+.button button {
+  margin: 5px;
+  padding: 10px;
+  width: 130%;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: hsl(270, 9%, 17%);
+  color: white;
+}
+
+header {
+  margin-top: -20px;
+  background-color: hsl(256, 26%, 20%);
+}
+
+.right {
+  background-image: url("./images/bg-pattern-intro-right-desktop.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.left {
+  background-image: url("./images/bg-pattern-intro-left-desktop.svg");
+  background-position: 0px 400px;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  display: flex;
+  height: 80vh;
+}
+
+.heading {
+  width: 50%;
+  margin: 50px;
+  margin-top: 70px;
+  margin-left: 100px;
+}
+
+.heading .border {
+  border-top: 2px solid white;
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  font-family: "DM Serif Display", serif;
+  color: hsl(0, 0%, 98%);
+}
+
+.heading p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-family: "Overpass", sans-serif;
+  color: hsl(0, 0%, 98%);
+}
+
+.button-2 button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 25%;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 98%);
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-2 button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: black;
+}
+
+.banner-img img {
+  height: 80vh;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+
+section {
+  margin-top: 230px;
+}
+
+.heading-2 .border-2 {
+  margin-left: 105px;
+  border-top: 2px solid hsl(273, 4%, 51%);
+  width: 10%;
+  margin-bottom: 40px;
+}
+
+.heading-2 h2 {
+  margin: 50px;
+  margin-left: 100px;
+  font-size: 3rem;
+  font-family: "DM Serif Display", serif;
+}
+
+.flex-items {
+  display: flex;
+  margin: 50px;
+  margin-left: 100px;
+}
+
+.icons h3 {
+  font-family: "DM Serif Display", serif;
+  margin-top: 15px;
+}
+
+.icons p {
+  margin-top: 10px;
+  margin-left: -10px;
+  padding: 10px;
+  color: hsl(273, 4%, 51%);
+  line-height: 1.5rem;
+}
+
+.flex-items-2 {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("./images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 100px;
+  background-color: hsl(256, 26%, 20%);
+}
+
+.heading-3 h3 {
+  font-family: "DM Serif Display", serif;
+  color: hsl(0, 0%, 98%);
+  font-size: 3rem;
+  margin: 30px 50px;
+}
+
+.button-3 button {
+  width: 40%;
+  margin: 100px 120px;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 98%);
+  text-transform: uppercase;
+  background: transparent;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+}
+
+.button-3 button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: black;
+}
+
+footer {
+  margin: 70px;
+  background-image: url("./images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logo-2 img {
+  margin-top: 20px;
+}
+
+.soc-med img {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.soc-med img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.border-3 {
+  border-top: 1px solid hsl(273, 4%, 51%);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 30px;
+}
+
+.grid-1 p,
+.grid-2 p,
+.grid-3 p,
+.grid-4 p {
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  color: hsl(273, 4%, 51%);
+}
+
+.grid-1 ul,
+.grid-2 ul,
+.grid-3 ul,
+.grid-4 ul {
+  margin-top: 40px;
+}
+
+.grid-1 ul li,
+.grid-2 ul li,
+.grid-3 ul li,
+.grid-4 ul li {
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.grid-1 ul li:hover,
+.grid-2 ul li:hover,
+.grid-3 ul li:hover,
+.grid-4 ul li:hover {
+  transform: scale(1.1);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 780px) {
+  .logo {
+    margin-left: -55px;
+  }
+
+  .hamburger-toggle {
+    visibility: visible;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+  }
+
+  nav {
+    margin-bottom: -70px;
+    overflow: hidden;
+  }
+
+  .hamburger-toggle button {
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    visibility: hidden;
+  }
+
+  .nav-links.show-nav {
+    background-image: url("./images/bg-pattern-mobile-nav.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-position-y: 210px;
+    visibility: visible;
+    background-color: hsl(270, 9%, 17%);
+    margin-top: 80px;
+    margin-left: -210px;
+    margin-right: -20px;
+    overflow: hidden;
+    display: block;
+    height: 70vh;
+    width: 130%;
+  }
+
+  .nav-links ul {
+    margin-top: 20px;
+    margin-left: 70px;
+    text-align: center;
+    display: block;
+  }
+
+  .nav-links ul li {
+    color: white;
+  }
+
+  .nav-links ul li:hover {
+    transform: scale(1.1);
+    color: white;
+  }
+
+  .button {
+    margin-left: 50px;
+  }
+
+  .button button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 60%;
+    margin-left: 80px;
+  }
+
+  .button button:hover {
+    transform: scale(1.1);
+  }
+
+  header {
+    position: relative;
+    margin-top: 530px;
+    height: 90vh;
+  }
+
+  .banner-img img {
+    height: 94vh;
+    overflow: hidden;
+    margin-top: -740px;
+    margin-left: -290px;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .right {
+    background-image: url("./images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: initial;
+  }
+
+  .left {
+    background-image: url("./images/bg-pattern-intro-right-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 300px;
+  }
+
+  .heading {
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 70px;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+    width: 140%;
+  }
+
+  .heading p {
+    font-size: 1rem;
+    width: 130%;
+  }
+
+  .button-2 button {
+    width: 80%;
+    margin-left: 58px;
+  }
+
+  .heading-2 {
+    margin-top: -00px;
+  }
+
+  .heading-2 h2 {
+    margin-left: 90px;
+  }
+
+  .heading-2 .border-2 {
+    width: 40%;
+    margin-left: 140px;
+  }
+
+  .flex-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons {
+    text-align: center;
+    margin-right: 50px;
+  }
+
+  .icons img {
+    margin-top: 20px;
+  }
+
+  .flex-items-2 {
+    background-image: url("./images/bg-pattern-how-we-work-mobile.svg");
+    background-position: right;
+    background-position-y: 2px;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 80%;
+    margin-left: 50px;
+  }
+
+  .heading-3 h3 {
+    text-align: center;
+    margin-left: 1px;
+    width: 100%;
+  }
+
+  .button-3 button {
+    margin-top: 30px;
+  }
+
+  .flex-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  .logo-2 {
+    margin-left: 12px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    margin-top: 40px;
+  }
+}
